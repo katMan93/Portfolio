@@ -5,7 +5,7 @@ from xlrd.sheet import empty_cell
 
 
 
-path = 'T:/DELTA Center/Travis/Fall 2016 Data/100% Online/Texas'
+path = '[File path to where Excel Data exists]'
 for root, dirs, files in os.walk(path):
     xlsfiles=[ _ for _ in files if _.endswith('.xlsx') ]
     for xlsfile in xlsfiles:
@@ -29,7 +29,7 @@ for root, dirs, files in os.walk(path):
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>SHSU Online Enrollment - Semester Year</title>
+        <title>[School Enrollment]</title>
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="http://www.shsu.edu/dl_www/maps/css/normalize.min.css">
@@ -46,7 +46,7 @@ for root, dirs, files in os.walk(path):
         <![endif]-->
 
         <div class="map">
-            <img src="img/%s.jpg" alt="SHSU Online State Enrollment Loading..."/>
+            <img src="img/%s.jpg" alt="[Page] Loading..."/>
         </div>
         <div class="enrollmentData">
             <h2>%s</h2>
